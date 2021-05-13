@@ -1,0 +1,39 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+		<title>Balls</title>
+	</head>
+	<body onload="drawIt()">
+		
+		<div id="coin"><p id="ptocke">Points: <mark id="tocke">0</mark></p>
+		<p id="pcas">Time: <mark id="cas">00:00</mark></p>
+		<p id="plives">Lives:
+		<img id="srcek1" src="heart.png" width="20" height="20">
+		<img id="srcek2" src="heart.png" width="20" height="20">
+		<img id="srcek3" src="heart.png" width="20" height="20"></p></div>
+		
+		<canvas id="canvas" width="1500px" height="700px">
+		
+		
+		
+		</canvas>
+		
+
+		<div id="pozdrav"><p id="ppozdrav">
+			Welcome to the game of bricks!</br></br></br>
+			The instructions for the game are simple </br></br>
+			The purpose of this game is to destroy as many "bricks" as possible.</br>Use the left and the right arrow to move the paddlet</br> If you want to start the game, press the button Start</br>
+			</br></br>Time, score and lives are displayed on top of the screen </br></br> Good luck!</p></div>
+		<button id="button" onclick="init()">Start</button>
+		<div id="restart"><p id="ppozdrav">You lost, better luck next time!</br> Your score is <mark id="tocke2">0</mark></br>  
+		You played for <mark id="cas2"></mark> seconds</p></div> 
+		<button id="button4" onclick="restart()">restart</button>
+		<div id="restart2"><p id="ppozdrav">Congratulations, you won!</br> Your score is <mark id="tocke3">0</mark></br> 
+		You played for <mark id="cas3"></mark> seconds</p></div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
